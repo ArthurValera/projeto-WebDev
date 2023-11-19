@@ -8,7 +8,7 @@ $login = $_POST['login'];
 $senha = $_POST['senha'];
 
 
-$sql = "INSERT INTO cadastro (email, login, senha)
+$sql = "INSERT INTO login (email, login, senha)
  VALUES ('$email', '$login', '$senha')";
 
 
