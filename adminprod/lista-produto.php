@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['excluir_id'])) {
     }
 }
 
-$entrega=$_REQUEST['enviar'];
+
 
 
 
