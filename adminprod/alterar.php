@@ -4,7 +4,7 @@
 <?php
 $id = $_GET['id'];
 $sql = "SELECT * FROM produtos WHERE id = $id";
-$busca = mysqli_query($conexao, $sql);
+$busca = mysqli_query($conn, $sql);
 
 while($dados=mysqli_fetch_array($busca)){
 
@@ -24,12 +24,8 @@ while($dados=mysqli_fetch_array($busca)){
         <input type="text" name="preco" value="<?=$dados['preco'];?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Imagem do produto</label>
-        <input type="file" name="imagem" value="<?=$dados['path'];?>" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label>Estoque</label>
-        <input type="text" name="estoque" value="<?=$dados['estoque'];?>" class="form-control">
+        <label>quantidade</label>
+        <input type="text" name="quantidade" value="<?=$dados['quantidade'];?>" class="form-control">
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Editar</button>
