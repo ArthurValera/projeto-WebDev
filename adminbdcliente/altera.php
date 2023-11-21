@@ -30,6 +30,10 @@ while($dados=mysqli_fetch_array($busca)){
         <input type="password" name="senha" class="form-control" required>
     </div>
     <div class="mb-3">
+        <label>pedidos</label>
+        <input type="text" name="pedidos"  value="<?=$dados['pedidos'];?>" class="form-control" required>
+    </div>
+    <div class="mb-3">
         <button type="submit" class="btn btn-primary">Editar</button>
     </div>
 </form>

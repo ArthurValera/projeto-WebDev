@@ -7,11 +7,11 @@ $id = $_POST['id'];
 $email = $_POST['email'];
 $login = $_POST['login'];
 $senha = $_POST['senha'];
-
+$pedido = $_POST['pedidos'];
 
 $sql2 = mysqli_query($conn, "SELECT * FROM login WHERE id='$id'");
 
-$sql = "UPDATE login SET email='$email', login='$login', senha='$senha' WHERE id=$id";
+$sql = "UPDATE login SET email='$email', login='$login', senha='$senha', pedidos='$pedido' WHERE id=$id";
 
 $altera = mysqli_query($conn, $sql);
 
