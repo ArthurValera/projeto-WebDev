@@ -6,6 +6,16 @@
 body{
     background-color: #e9d6cd;
 }
+button{
+    margin-top: 20px;
+    background: #dfa167;
+    border: none;
+    outline: none;
+    letter-spacing: .04em;
+    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
 a{
     text-decoration: none;
     color: #000;
